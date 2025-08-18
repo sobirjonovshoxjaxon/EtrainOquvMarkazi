@@ -160,7 +160,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- swiper js -->
     <script src="{{ asset ('assets/js/swiper.min.js')}}"></script>
     <!-- swiper js -->
-    <script src="{{ asset ('assets/js/masonry.pkgd.js')}}"></script>
+    <script src="{{ asset ('assets/js/masonry.pkgd.min.js')}}"></script>
     <!-- particles js -->
     <script src="{{ asset ('assets/js/owl.carousel.min.js')}}"></script>
     <script src="{{ asset ('assets/js/jquery.nice-select.min.js')}}"></script>
