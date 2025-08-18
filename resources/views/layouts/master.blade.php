@@ -10,19 +10,19 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset ('assets/css/bootstrap.min.css')}}">
     <!-- animate CSS -->
-    <link rel="stylesheet" href="{{ asset ('assets/css/animate.css')}}">
+    <link rel="stylesheet" href="{{ asset ('assets/css/animate.min.css')}}">
     <!-- owl carousel CSS -->
     <link rel="stylesheet" href="{{ asset ('assets/css/owl.carousel.min.css')}}">
     <!-- themify CSS -->
-    <link rel="stylesheet" href="{{ asset ('assets/css/themify-icons.css')}}">
+    <link rel="stylesheet" href="{{ asset ('assets/css/themify-icons.min.css')}}">
     <!-- flaticon CSS -->
     <link rel="stylesheet" href="{{ asset ('assets/css/flaticon.css')}}">
     <!-- font awesome CSS -->
     <link rel="stylesheet" href="{{ asset ('assets/css/magnific-popup.css')}}">
     <!-- swiper CSS -->
-    <link rel="stylesheet" href="{{ asset ('assets/css/slick.css')}}">
+    <link rel="stylesheet" href="{{ asset ('assets/css/slick.min.css')}}">
     <!-- style CSS -->
-    <link rel="stylesheet" href="{{ asset ('assets/css/style.css')}}">
+    <link rel="stylesheet" href="{{ asset ('assets/css/style.min.css')}}">
 </head>
 
 <body>
@@ -43,28 +43,28 @@
                             id="navbarSupportedContent">
                             <ul class="navbar-nav align-items-center">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="index.html">Home</a>
+                                    <a class="nav-link" href="{{ route('index.page')}}">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="about.html">About</a>
+                                    <a class="nav-link" href="{{ route('about.page')}}">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="cource.html">Courses</a>
+                                    <a class="nav-link" href="{{ route('course.page') }}">Courses</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="blog.html">Blog</a>
+                                    <a class="nav-link" href="{{ route('blog.page') }}">Blog</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Pages
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="single-blog.html">Single blog</a>
-                                        <a class="dropdown-item" href="elements.html">Elements</a>
+                                        <a class="dropdown-item" href="{{ route('singleBlog.page')}}">Single blog</a>
+                                        <a class="dropdown-item" href="{{ route('elements.page') }}">Elements</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
+                                    <a class="nav-link" href="{{ route('contact.page')}}">Contact</a>
                                 </li>
                                 <li class="d-none d-lg-block">
                                     <a class="btn_1" href="#">Get a Quote</a>
@@ -169,7 +169,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="{{ asset ('assets/js/jquery.counterup.min.js')}}"></script>
     <script src="{{ asset ('assets/js/waypoints.min.js')}}"></script>
     <!-- custom js -->
-    <script src="{{ asset ('assets/js/custom.js')}}"></script>
+    <script src="{{ asset ('assets/js/custom.min.js')}}"></script>
 </body>
 
 </html>

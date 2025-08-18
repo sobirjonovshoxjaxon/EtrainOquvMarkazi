@@ -1,22 +1,14 @@
+<?php 
+    $pageTitle = 'Course';
+?>
+
+
 @extends('layouts.master')
 @section('content')
 
 
     <!-- breadcrumb start-->
-    <section class="breadcrumb breadcrumb_bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb_iner text-center">
-                        <div class="breadcrumb_iner_item">
-                            <h2>Our Courses</h2>
-                            <p>Home<span>/</span>Courses</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('layouts.breadcrumb')
     <!-- breadcrumb start-->
 
     <!--::review_part start::-->
@@ -68,7 +60,7 @@
                     <div class="single_special_cource">
                         <img src="{{ asset ('assets/img/special_cource_2.png')}}" class="special_img" alt="">
                         <div class="special_cource_text">
-                            <a href="course-details.html" class="btn_4">design</a>
+                            <a href="{{ route('courseDetail.page') }}" class="btn_4">design</a>
                             <h4>$160.00</h4>
                             <a href="course-details.html">
                                 <h3>Web UX/UI Design </h3>
