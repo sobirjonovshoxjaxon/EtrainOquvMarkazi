@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\AdminController;
 
 //PageController
 Route::get('/',[PageController::class, 'index'])->name('index.page');
@@ -13,6 +14,10 @@ Route::get('/course/detail',[PageController::class, 'courseDetail'])->name('cour
 Route::get('/course',[PageController::class, 'course'])->name('course.page');
 Route::get('/elements',[PageController::class, 'elements'])->name('elements.page');
 Route::get('/single/blog',[PageController::class, 'singleBlog'])->name('singleBlog.page');
+
+
+//AdminController 
+Route::get('/admin/index',[AdminController::class, 'index'])->name('admin.index');
 
 
 //Laravel Breeze 
