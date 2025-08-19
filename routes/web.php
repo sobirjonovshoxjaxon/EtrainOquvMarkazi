@@ -4,6 +4,11 @@ use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\CourseController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\TagController;
 
 //PageController
 Route::get('/',[PageController::class, 'index'])->name('index.page');
@@ -18,6 +23,18 @@ Route::get('/single/blog',[PageController::class, 'singleBlog'])->name('singleBl
 
 //AdminController 
 Route::get('/admin/index',[AdminController::class, 'index'])->name('admin.index');
+
+//Resource Controller 
+Route::resources([
+
+    'users' => UserController::class,
+    'blogs' => BlogController::class,
+    'courses' => CourseController::class,
+    'category' => CategoryController::class,
+    'tags' => TagController::class, 
+
+]);
+
 
 
 //Laravel Breeze 
